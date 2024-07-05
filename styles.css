@@ -1,0 +1,112 @@
+:root {
+    --background-body: #ffffff;
+    --navy-blue-text: #2E2F42;
+    --font-family: 'Roboto', sans-serif;
+    --background-hiro: #2E2F42; 
+    --white-text: #ffffff; 
+    --background-cloud: #F4F4FD;
+    --post-title: #434455;
+    --footer-text: #E7E9FC;
+    --order-service: #4D5AE5;
+    --logo-web: #4D5AE5;
+    --footer-logo-studio: #ffffff;
+
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    
+}
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+/* Остальной код */
+body {
+    width: 100%;
+    background-color: var(--background-body);
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.hero-container {
+    width: 320px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 320px) and (max-width: 1157px) {
+    .hero-container {
+        background-image: url(./img/glass-mobile.png);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+hero {
+    background-image: url(/img/bg-desktop.png);
+    color: var(--white-text);
+}
+.hero {
+    width: 100%;
+    display: block;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+
+.hero-title {
+    font-weight: 500;
+font-size: 50px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--white-text);
+margin-bottom: 16px;
+}
+@media (max-width: 767px) {
+    .social-title-hero { 
+        text-align: center;
+    }
+}
+
+.social-list-hero {
+    margin-top: 216px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.social-item-hero {
+    width: 40px;
+    height: 40px;
+}
+.social-link-hero {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link-hero:hover {
+    background-color: #31D0AA;
+}
+.social-link-hero:focus {
+    background-color: #31D0AA;
+    outline-color: transparent;
+}
+.social-icon-hero {
+    fill: #F4F4FD;
+}
